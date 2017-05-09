@@ -32,6 +32,7 @@ Els requeriments són els següents:
   * Es poden modificar els articles/serveis introduits tot clicant-ne el seu concepte/descripció, que serà un hipervincle que carregarà els valors als inputs de la part superior.
   * Es poden esborrar els articles/serveis introduits tot clicant-ne un botó "-" ubicat a la dreta de cadascun dels elements del llistat.
   * La llista és paginable.
+  * la llista és filtrable per cadascuna de les seves columnes (in-client).
   * La llista és ordenable per cadascuna de les seves columnes.
   * Al footer de la llista es totalitza el sumatori dels imports.
 * ~~A la part inferior de la pantalla cal habilitar un botó d'impressió que generarà un fitxer PDF.~~
@@ -53,5 +54,6 @@ Veure imatge layout.png.
 
 1. Servei CRUD de dades del remitent.
 2. Servei CRUD d'elements del pressupost.
+3. Pipe de filtre.
 
 #### 1.4. TBC.
