@@ -2,7 +2,7 @@
 
 ## Objectius
 
-* Interioritzar contingut del curs.
+* Interioritzar el contingut del curs.
 * Tractar problemes de desenvolupament reals.
 * Adquirir coneixement sobre la metodologia.
 * Aprendre a desenvolupar codi TypeScript.
@@ -12,7 +12,7 @@
 
 ## Continguts
 
-### 1. Aplicació Angular4.
+### Aplicació Angular4.
 
 Es desitja crear un programari web que permeti generar pressupostos online de manera ràpida, posant èmfasi en la usabilitat i escalabilitat per dammunt de la normalització de les dades introduïdes.
 
