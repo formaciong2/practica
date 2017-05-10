@@ -40,7 +40,7 @@ Els requeriments són els següents:
 
 #### 1.1. Estructura de l'aplicació.
 
-Veure imatge ![layout.png](https://github.com/formaciong2/practica/edit/master/layout.png "Layout de l'aplicació")
+![layout.png](https://github.com/formaciong2/practica/blob/master/layout.png?raw=true "Layout de l'aplicació")
 
 #### 1.2. Components.
 
