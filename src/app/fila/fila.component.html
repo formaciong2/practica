@@ -1,0 +1,9 @@
+<table border="1">
+  <tr><th>concepte</th><th>quantitat</th><th>preu</th></tr>
+  <tr *ngFor="let element of elementsInput; let i = index">
+      <td>{{element.concepte}}</td>
+      <td>{{element.quantitat}}</td>
+      <td>{{element.preu}}</td>
+      <td><button (click)="esborrarElement(i)">X</button></td>
+  </tr>
+</table>
