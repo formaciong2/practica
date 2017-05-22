@@ -1,20 +1,18 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { Element } from '../element';
 
 @Component({
   selector: 'app-element',
   templateUrl: './element.component.html',
   styleUrls: ['./element.component.css']
 })
-export class ElementComponent implements OnInit {
+export class ElementComponent{
 
-  elementFormulari: ElementInterface;
-  @Output() elementOutput: EventEmitter<ElementInterface> = new EventEmitter();
+  elementFormulari: Element;
+  @Output() elementOutput: EventEmitter<Element> = new EventEmitter();
 
   constructor() { 
-    this.elementFormulari = {"concepte":"hola", "preu":10, "quantitat":5};
-  }
-
-  ngOnInit() {
+    this.elementFormulari = {"concepte": "Concepte 1", "preu":10, "quantitat":5, "descompte":10};
   }
 
   afegir(){
@@ -23,9 +21,3 @@ export class ElementComponent implements OnInit {
   }  
 
 }
-
-export interface ElementInterface{
-     concepte? : string;
-     preu? : number;
-     quantitat? : number;
-  }

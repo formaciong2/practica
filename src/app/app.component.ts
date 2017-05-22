@@ -1,4 +1,4 @@
-import { ElementInterface } from "./element/element.component";
+import { Element } from "./element";
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Practica de Remitents';
-  elements: ElementInterface[] = [{concepte:"hola",quantitat:20},{concepte:"adios",quantitat:30}];
+  elements: Element[] = [{concepte:"hola",quantitat:20}, {concepte:"adios",quantitat:30}];
 
-  afegirElement(element:ElementInterface){
+  afegirElement(element : Element){
     this.elements.push(element);
   }
 }

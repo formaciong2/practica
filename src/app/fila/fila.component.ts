@@ -1,18 +1,15 @@
-import { Component, OnInit,Input } from '@angular/core';
-import { ElementInterface } from "./../element/element.component";
+import { Component, Input } from '@angular/core';
+import { Element } from "../element";
 
 @Component({
   selector: 'app-fila',
   templateUrl: './fila.component.html',
   styleUrls: ['./fila.component.css']
 })
-export class FilaComponent implements OnInit {
-  @Input() elementsInput : ElementInterface[] ;
+export class FilaComponent {
+  @Input() elementsInput : Element[] ;
   constructor() { 
   
-  }
-
-  ngOnInit() {
   }
 
   esborrarElement(index : number){

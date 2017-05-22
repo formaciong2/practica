@@ -1,9 +1,11 @@
-<table border="1">
-  <tr><th>concepte</th><th>quantitat</th><th>preu</th></tr>
+<table class="table table-striped table-s">
+  <tr><th>Concepte</th><th>Quantitat</th><th>Preu</th><th>Descompte</th><th>Import</th></tr>
   <tr *ngFor="let element of elementsInput; let i = index">
       <td>{{element.concepte}}</td>
       <td>{{element.quantitat}}</td>
       <td>{{element.preu}}</td>
+	  <td>{{element.descompte}}</td>
+	  <td>{{element.preu * element.quantitat * (100 - element.descompte) / 100}}</td>
       <td><button (click)="esborrarElement(i)">X</button></td>
   </tr>
 </table>
