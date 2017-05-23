@@ -1,19 +1,29 @@
-<h2>Element</h2>
-<table>
+<h4>Afegir/Modificar element</h4>
+<table class="table">
   <tr>
-    <td>concepte:</td>
-    <td><input type="text" [(ngModel)]="elementFormulari.concepte"></td>
+    <td>
+		Concepte
+	</td>
+	<td>
+		Preu
+	</td>
+    <td>
+		Quantitat
+	</td>
+	<td></td>
   </tr>
   <tr>
-    <td>preu:</td>
-    <td><input type="text" [(ngModel)]="elementFormulari.preu"></td>
-  </tr>
-  <tr>
-    <td>quantitat:</td>
-    <td><input type="text" [(ngModel)]="elementFormulari.quantitat"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><button class="btn btn-primary" type="button" (click)="afegir()"><i class="ionicons ion-plus-round"></i> Afegir</button></td>
+    <td>
+		<input type="text" [(ngModel)]="elementFormulari.concepte">
+	</td>
+    <td>
+		<input type="text" [(ngModel)]="elementFormulari.preu">
+	</td>
+    <td>
+		<input type="text" [(ngModel)]="elementFormulari.quantitat">
+	</td>
+    <td>
+		<button class="btn btn-primary" type="button" (click)="afegir()"><i class="ionicons ion-plus-round"></i> Afegir</button>
+	</td>
   </tr>
 </table>

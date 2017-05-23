@@ -1,23 +1,41 @@
-<h2>Remitent</h2>
-<table>
+<h4>Dades de l'emissor</h4>
+<table class="table">
   <tr>
-    <td>nom:</td>
-    <td><input type="text" [(ngModel)]="nom"></td>
+	<td>
+		Nom
+	</td>
+	<td>
+		NIF
+	<td>
+		Adreça
+	</td>
+	<td>
+		Codi postal
+	</td>
+	<td>
+		Telèfon
+	</td>
+	<td>
+	</td>
   </tr>
   <tr>
-    <td>nif:</td>
-    <td><input type="text" [(ngModel)]="nif"></td>
-  </tr>
-  <tr>
-    <td>adreca:</td>
-    <td><input type="text" [(ngModel)]="adreca"></td>
-  </tr>
-  <tr>
-    <td>cp:</td>
-    <td><input type="text" [(ngModel)]="cp"></td>
-  </tr>
-  <tr>
-    <td>telefon:</td>
-    <td><input type="text" [(ngModel)]="telefon"></td>
+    <td>
+		<input type="text" [(ngModel)]="nom">
+	</td>
+    <td>
+		<input type="text" [(ngModel)]="nif">
+	</td>
+    <td>
+		<input type="text" [(ngModel)]="adreca">
+	</td>
+    <td>
+		<input type="text" [(ngModel)]="cp">
+	</td>
+    <td>
+		<input type="text" [(ngModel)]="telefon">
+	</td>
+    <td>
+		<button class="btn btn-primary"><i class="ion ion-archive"></i> Guardar</button>
+	</td>
   </tr>
 </table>
