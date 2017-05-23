@@ -10,7 +10,11 @@
     <td>
 		Quantitat
 	</td>
-	<td></td>
+	<td>
+		Descompte
+	</td>
+	<td>
+	</td>
   </tr>
   <tr>
     <td>
@@ -21,6 +25,9 @@
 	</td>
     <td>
 		<input type="text" [(ngModel)]="elementFormulari.quantitat">
+	</td>
+    <td>
+		<input type="text" [(ngModel)]="elementFormulari.descompte">
 	</td>
     <td>
 		<button class="btn btn-primary" type="button" (click)="afegir()"><i class="ionicons ion-plus-round"></i> Afegir</button>
