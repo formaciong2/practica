@@ -35,7 +35,26 @@
 		<input type="text" [(ngModel)]="telefon">
 	</td>
     <td>
-		<button class="btn btn-primary"><i class="ion ion-archive"></i> Guardar</button>
+		<button class="btn btn-primary" (click)="open(content)"><i class="ion ion-archive"></i> Guardar</button>
 	</td>
   </tr>
 </table>
+
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Acció de guardat</h4>
+    <button type="button" class="btn btn-outline-danger" aria-label="Tancar" (click)="d('Cross click')">
+      <i class="ion ion-close"></i>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Implementació del guardat de l'emissor</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="c('Close click')"><i class="ion ion-close"></i> Tancar</button>
+  </div>
+</ng-template>
+
+
