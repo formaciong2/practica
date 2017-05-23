@@ -1,47 +1,48 @@
-<h4>Dades de l'emissor</h4>
-<table class="table">
-  <tr>
-	<td>
-		Nom
-	</td>
-	<td>
-		NIF
-	<td>
-		Adreça
-	</td>
-	<td>
-		Codi postal
-	</td>
-	<td>
-		Telèfon
-	</td>
-	<td>
-	</td>
-  </tr>
-  <tr>
-    <td>
-		<input type="text" [(ngModel)]="nom">
-	</td>
-    <td>
-		<input type="text" [(ngModel)]="nif">
-	</td>
-    <td>
-		<input type="text" [(ngModel)]="adreca">
-	</td>
-    <td>
-		<input type="text" [(ngModel)]="cp">
-	</td>
-    <td>
-		<input type="text" [(ngModel)]="telefon">
-	</td>
-    <td>
-		<button class="btn btn-primary" (click)="open(content)"><i class="ion ion-archive"></i> Guardar</button>
-	</td>
-  </tr>
-</table>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+			<h4>Dades de l'emissor</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
+			Nom
+		</div>
+		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
+			NIF
+		</div>
+		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
+			Adreça
+		</div>
+		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
+			Codi postal
+		</div>
+		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
+			Telèfon
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
+			<input type="text" [(ngModel)]="nom">
+		</div>
+		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
+			<input type="text" [(ngModel)]="nif">
+		</div>
+		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
+			<input type="text" [(ngModel)]="adreca">
+		</div>
+		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
+			<input type="text" [(ngModel)]="cp">
+		</div>
+		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
+			<input type="text" [(ngModel)]="telefon">
+		</div>
+		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
+			<button class="btn btn-primary" (click)="open(content)"><i class="ion ion-archive"></i> Guardar</button>
+		</div>
+	</div>
 
-
-
+	
 <ng-template #content let-c="close" let-d="dismiss">
   <div class="modal-header">
     <h4 class="modal-title">Acció de guardat</h4>

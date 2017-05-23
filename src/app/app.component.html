@@ -1,12 +1,24 @@
-<nav class="navbar navbar-light" style="background-color: #edf7fd;">
+<nav class="navbar navbar-light" style="background-color: #feeffe;">
   <a class="navbar-brand" href="#">
     <img src="/assets/budgetio.svg" width="30" height="30" class="d-inline-block align-top" alt="">
     Budget.io
   </a>
 </nav>
-<hr/>
-<app-remitent></app-remitent>
-<hr/>
-<app-element (elementOutput)="afegirElement($event)" ></app-element>
-<hr/>
-<app-fila [elementsInput]="elements"></app-fila>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+			<app-remitent></app-remitent>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<app-element (elementOutput)="afegirElement($event)" ></app-element>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<app-fila [elementsInput]="elements"></app-fila>
+		</div>
+	</div>
+</div>
