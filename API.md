@@ -7,7 +7,7 @@ Content-type: application/json
 
 
 ## Obtenció de tots els articles:
- GET	http://DESA3473:8080/practicang/rest/v1/articles/
+ GET	http://10.49.203.247:8080/practicang/rest/v1/articles/
  
 ### Retorna
  200 - [] d'articles.
@@ -15,7 +15,7 @@ Content-type: application/json
  404 - No hi ha articles.
 
 ## Obtenció d'un article:
- GET	http://DESA3473:8080/practicang/rest/v1/articles/...
+ GET	http://10.49.203.247:8080/practicang/rest/v1/articles/...
 
 ### Retorna
  200 - Article
@@ -23,7 +23,7 @@ Content-type: application/json
  404 - No es troba l'article.
 
 ## Crear un article:
- POST	http://DESA3473:8080/practicang/rest/v1/articles
+ POST	http://10.49.203.247:8080/practicang/rest/v1/articles
 		Body:
 		{"concepte": "...", "quantitat": ..., "preu": ... [, "descompte": ...]}
 
@@ -31,7 +31,7 @@ Content-type: application/json
  200 - Article
 
 ## Actualitzar un article:
- PUT	http://DESA3473:8080/practicang/rest/v1/articles
+ PUT	http://10.49.203.247:8080/practicang/rest/v1/articles
 		Body:
 		{"id": ..., "concepte": "...", "quantitat": ..., "preu": ... [, "descompte": ...]}
 
@@ -41,7 +41,7 @@ Content-type: application/json
  406 - Falta l'id a la request.
 
 ## Esborrar un article:
- DELETE	http://DESA3473:8080/practicang/rest/v1/articles/...
+ DELETE	http://10.49.203.247:8080/practicang/rest/v1/articles/...
 
  ### Retorna
  200
