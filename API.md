@@ -23,7 +23,7 @@ Content-type: application/json
  404 - No es troba l'article.
 
 ## Crear un article:
- POST	http://localhost:8080/sampleproject/rest/v1/articles
+ POST	http://DESA3473:8080/sampleproject/rest/v1/articles
 		Body:
 		{"concepte": "...", "quantitat": ..., "preu": ... [, "descompte": ...]}
 
@@ -31,7 +31,7 @@ Content-type: application/json
  Article
 
 ## Actualitzar un article:
- PUT	http://localhost:8080/sampleproject/rest/v1/articles
+ PUT	http://DESA3473:8080/sampleproject/rest/v1/articles
 		Body:
 		{"id": ..., "concepte": "...", "quantitat": ..., "preu": ... [, "descompte": ...]}
 
@@ -41,4 +41,4 @@ Content-type: application/json
  406 - Falta l'id a la request.
 
 ## Esborrar un article:
- DELETE	http://localhost:8080/sampleproject/rest/v1/articles/...
+ DELETE	http://DESA3473:8080/sampleproject/rest/v1/articles/...
