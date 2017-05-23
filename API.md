@@ -7,38 +7,41 @@ Content-type: application/json
 
 
 ## Obtenció de tots els articles:
- GET	http://DESA3473:8080/sampleproject/rest/v1/articles/
+ GET	http://DESA3473:8080/practicang/rest/v1/articles/
  
 ### Retorna
- [] d'articles.
+ 200 - [] d'articles.
 ### Errors
  404 - No hi ha articles.
 
 ## Obtenció d'un article:
- GET	http://DESA3473:8080/sampleproject/rest/v1/articles/...
+ GET	http://DESA3473:8080/practicang/rest/v1/articles/...
 
 ### Retorna
- Article
+ 200 - Article
 ### Errors
  404 - No es troba l'article.
 
 ## Crear un article:
- POST	http://DESA3473:8080/sampleproject/rest/v1/articles
+ POST	http://DESA3473:8080/practicang/rest/v1/articles
 		Body:
 		{"concepte": "...", "quantitat": ..., "preu": ... [, "descompte": ...]}
 
 ### Retorna
- Article
+ 200 - Article
 
 ## Actualitzar un article:
- PUT	http://DESA3473:8080/sampleproject/rest/v1/articles
+ PUT	http://DESA3473:8080/practicang/rest/v1/articles
 		Body:
 		{"id": ..., "concepte": "...", "quantitat": ..., "preu": ... [, "descompte": ...]}
 
 ### Retorna
- Article
+ 200 - Article
 ### Errors
  406 - Falta l'id a la request.
 
 ## Esborrar un article:
- DELETE	http://DESA3473:8080/sampleproject/rest/v1/articles/...
+ DELETE	http://DESA3473:8080/practicang/rest/v1/articles/...
+
+ ### Retorna
+ 200
