@@ -23,22 +23,22 @@
 	</div>
 	<div class="row">
 		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
-			<input type="text" [(ngModel)]="nom">
+			<input class="form-control" type="text" [(ngModel)]="nom">
 		</div>
 		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
-			<input type="text" [(ngModel)]="nif">
+			<input class="form-control" type="text" [(ngModel)]="nif">
 		</div>
 		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
-			<input type="text" [(ngModel)]="adreca">
+			<input class="form-control" type="text" [(ngModel)]="adreca">
 		</div>
 		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
-			<input type="text" [(ngModel)]="cp">
+			<input class="form-control" type="text" [(ngModel)]="cp">
 		</div>
 		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
-			<input type="text" [(ngModel)]="telefon">
+			<input class="form-control" type="text" [(ngModel)]="telefon">
 		</div>
 		<div class="col-2 col-md-2 col-sm-6 col-xs-6">
-			<button class="btn btn-primary" (click)="open(content)"><i class="ion ion-archive"></i> Guardar</button>
+			<button class="btn btn-primary" (click)="open(content)"><i class="icon ion-md-save"></i> Guardar</button>
 		</div>
 	</div>
 
@@ -47,14 +47,14 @@
   <div class="modal-header">
     <h4 class="modal-title">Acció de guardat</h4>
     <button type="button" class="btn btn-outline-danger" aria-label="Tancar" (click)="d('Cross click')">
-      <i class="ion ion-close"></i>
+      <i class="icon ion-md-close"></i>
     </button>
   </div>
   <div class="modal-body">
     <p>Implementació del guardat de l'emissor</p>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" (click)="c('Close click')"><i class="ion ion-close"></i> Tancar</button>
+    <button type="button" class="btn btn-secondary" (click)="c('Close click')"><i class="icon ion-md-close"></i> Tancar</button>
   </div>
 </ng-template>
 
