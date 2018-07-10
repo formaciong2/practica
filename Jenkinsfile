@@ -18,6 +18,7 @@ node {
         }
     }
 
+
     //stage('Test') {
         //withEnv(["CHROME_BIN=/usr/bin/chromium-browser"]) {
         //  sh 'ng test --progress=false --watch false'
@@ -37,7 +38,6 @@ node {
     stage('Archive') {
         sh 'tar -cvzf ngPractica.tar.gz --strip-components=1 dist'
         archive 'ngPractica.tar.gz'
-    }
 
     stage('Deploy') {
         milestone()
