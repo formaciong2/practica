@@ -25,9 +25,9 @@ node {
         //junit '**/test-results.xml'
     //}
 
-    stage('Lint') {
-        sh 'ng lint'
-    }
+    //stage('Lint') {
+    //   sh 'ng lint'
+    //}
 
     stage('Build') {
         milestone()
