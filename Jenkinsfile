@@ -38,9 +38,11 @@ node {
     stage('Archive') {
         sh 'tar -cvzf ngPractica.tar.gz --strip-components=1 dist'
         archive 'ngPractica.tar.gz'
+    }
 
     stage('Deploy') {
         milestone()
         echo "Deploying..."
     }
+
 }
