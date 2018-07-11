@@ -17,7 +17,7 @@ constructor() {
 
   afegir() {
     this.elementOutput.emit(this.elementFormulari);
-    this.elementFormulari = {};
+    this.elementFormulari = new Element();
   }
 
 }
