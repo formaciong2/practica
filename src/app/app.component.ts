@@ -19,7 +19,7 @@ export class AppComponent {
     //   --> invocar l'obtenció de dades des del WS (igual que a ngOnInit.
     //      --> Esborrar la llista d'elements.
     //      --> Afegir tots els elements que ha retornat el WS.
-  
+
     this.elements.push(element);
   }
 }

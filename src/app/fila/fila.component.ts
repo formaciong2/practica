@@ -8,16 +8,15 @@ import { Element } from '../element';
 })
 export class FilaComponent {
   @Input() elementsInput: Element[] ;
-constructor() { 
-}
+constructor() {}
 
-  esborrarElement(index: number){
+  esborrarElement(index: number) {
     // Llençar l'event cap al contenidor. Al contenidor realitzar el DELETE de l'element i refrescar l'array.
-    this.elementsInput.splice(index,1);
+    this.elementsInput.splice(index, 1);
   }
 
   getTotal() {
-    let imports = this.elementsInput.map(i => i.preu * i.quantitat * (100 - i.descompte) / 100);
+    const imports = this.elementsInput.map(i => i.preu * i.quantitat * (100 - i.descompte) / 100);
     return imports.reduce((a, b) => a + b, 0);
   }
 }

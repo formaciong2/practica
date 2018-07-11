@@ -11,13 +11,13 @@ export class ElementComponent {
   elementFormulari: Element;
   @Output() elementOutput: EventEmitter<Element> = new EventEmitter();
 
-constructor() { 
+constructor() {
   this.elementFormulari = {'concepte': 'Concepte 1', 'preu': 10, 'quantitat': 5, 'descompte': 10};
 }
 
   afegir() {
     this.elementOutput.emit(this.elementFormulari);
     this.elementFormulari = {};
-  }  
+  }
 
 }
