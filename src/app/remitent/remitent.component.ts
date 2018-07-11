@@ -17,13 +17,13 @@ export class RemitentComponent {
 
   closeResult: string;
 
-  constructor(private modalService: NgbModal) {}
+constructor(private modalService: NgbModal) {}
 
   open(content) {
     this.modalService.open(content, { windowClass: 'dark-modal' });
   }
 
   guardar() {
-	  // Implementació de l'acció de guardat.
+    // Implementació de l'acció de guardat.
   }
 }

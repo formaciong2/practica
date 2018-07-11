@@ -1,6 +1,6 @@
 export class Element {
-     concepte?: string = "";
-     preu?: number = 0;
-     quantitat?: number = 0;
-	 descompte?: number = 0;
-  }
+    concepte? = '';
+    preu? = 0;
+    quantitat? = 0;
+    descompte? = 0;
+}
