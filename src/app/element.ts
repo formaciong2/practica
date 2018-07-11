@@ -1,6 +1,13 @@
 export class Element {
-     concepte?: string = "";
-     preu?: number = 0;
-     quantitat?: number = 0;
-	 descompte?: number = 0;
-  }
+  concepte: string;
+  preu: number;
+  quantitat: number;
+  descompte: number;
+
+constructor() {
+  this.concepte = '';
+  this.preu = 0;
+  this.quantitat = 0;
+  this.descompte = 0;
+}
+}

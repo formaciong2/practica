@@ -16,7 +16,7 @@
 		  <td>{{element.preu}}</td>
 		  <td>{{element.descompte}}</td>
 		  <td>{{element.preu * element.quantitat * (100 - (element.descompte || 0)) / 100}}</td>
-		  <td><button class="btn btn-outline-danger" (click)="esborrarElement(i)"><i class="ionicons ion-close"></i> Eliminar</button></td>
+		  <td><button class="btn btn-outline-danger" (click)="esborrarElement(i)"><i class="icon ion-md-remove-circle-outline"></i> Eliminar</button></td>
 	  </tr>
   </tbody>
   <tfoot>

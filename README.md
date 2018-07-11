@@ -12,7 +12,7 @@
 
 ## Continguts
 
-### Aplicació Angular4.
+### Aplicació Angular6.
 
 Es desitja crear un programari web que permeti generar pressupostos online de manera ràpida, posant èmfasi en la usabilitat i escalabilitat per dammunt de la normalització de les dades introduïdes.
 
@@ -21,6 +21,7 @@ Els requeriments són els següents:
 * One-page app.
 * Alliberar de càrrega al servidor respecte a solucions JSF.
 * Client ric.
+* Estils Bootstrap 4.
 * Barra de títol fixa.
 * Pantalla d'accions on:
   * Es poden introduir les dades de qui fa el pressupost a un formulari de lectura i escriptura.
